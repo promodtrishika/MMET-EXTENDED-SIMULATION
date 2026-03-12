@@ -133,15 +133,15 @@ with col2:
     # Dark Energy mass fraction is the infinite remainder
     a6_plus = 1.0 - (zeta_binding_coefficient(1) + zeta_binding_coefficient(2) + a3 + a4 + a5)
 
-    # 2. Interactive Dimensional Velocity Scaling Factors (y_k)
+# 2. Interactive Dimensional Velocity Scaling Factors (y_k)
     st.markdown("#### Dimensional Velocity Scaling Factors ($y_k$)")
     col_y1, col_y2, col_y3 = st.columns(3)
     with col_y1:
-        y_4 = st.slider("y_4 (Primary DM Scaling)", min_value=1.0, max_value=2.0, value=1.50, step=0.01)
+        y_4 = st.slider("y₄ (Primary DM)", min_value=1.0, max_value=2.0, value=1.50, step=0.01)
     with col_y2:
-        y_5 = st.slider("y_5 (Secondary DM Scaling)", min_value=1.0, max_value=3.0, value=2.40, step=0.01)
+        y_5 = st.slider("y₅ (Secondary DM)", min_value=1.0, max_value=3.0, value=2.40, step=0.01)
     with col_y3:
-        y_6_plus = st.slider("y_k\u22656 (Dark Energy Aggregate)", min_value=1.0, max_value=4.0, value=2.53, step=0.01)
+        y_6_plus = st.slider("yₖ (≥6) (Dark Energy)", min_value=1.0, max_value=4.0, value=2.53, step=0.01)
     
     y_3 = 1.0 # 3D baseline is always 1c
 
